@@ -1,0 +1,147 @@
+using System;
+using static System.Math;
+
+namespace titipodigor
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*Console.WriteLine("Введите число: ");
+            int numb = Int32.Parse(Console.ReadLine());
+
+            if (numb >= 0)
+
+            {
+
+                Console.WriteLine("Результат: введено число положительное");
+
+            }
+
+            else
+
+            {
+
+                Console.WriteLine("Результат: введено отрицательное число");
+            }
+
+
+            Console.WriteLine("Введите число: ");
+            int numb = Int32.Parse(Console.ReadLine());
+            numb = Math.Abs(numb);
+            int ed = numb % 10;
+            int des = (numb - ed) / 10;
+            Console.WriteLine($"Результат: единицы {ed}, десятки {des}");
+
+
+            Console.WriteLine("Введите трезначное число");
+            int numb = Int32.Parse(Console.ReadLine());
+            numb = Math.Abs(numb);
+            int ed = numb % 10;
+            int des = (numb - ed) % 100 / 10;
+            int sot = (numb - ed - des) / 100;
+            int nov = 0;
+            Console.WriteLine($"Цифры числа: {sot}, {des}, {ed}; Результат: {sot}{nov}{ed}");*/
+
+
+
+            /*Console.WriteLine("Введите 3 целых числа:");
+            int first = Int32.Parse(Console.ReadLine());
+            int second = Int32.Parse(Console.ReadLine());
+            int third = Int32.Parse(Console.ReadLine());
+            if (first != second || second != third || first!= third)
+            {
+                Console.WriteLine("True");
+            }
+            else
+            {
+                Console.WriteLine("False");
+            }*/
+
+            /*Console.WriteLine("Введите 3 числа:");
+            int a = Int32.Parse(Console.ReadLine());
+            int b = Int32.Parse(Console.ReadLine());
+            int c = Int32.Parse(Console.ReadLine());
+            if ((a + b) > c || (b + c) > a || (a + c) > b)
+            {
+                Console.WriteLine("True");
+                int p = (a + b + c) / 2;
+                double s = Math.Sqrt(p * (p - a) * (p - b) * (p - c));
+                Console.WriteLine($"Результат: существует, его площать {s}");
+            }
+            else
+            {
+                Console.WriteLine("False");
+            }*/
+
+            /*Console.WriteLine("Введите число:");
+            int x = Int32.Parse(Console.ReadLine());
+
+            if (x >= -2 && x <= 2)
+            {
+                int x1 = -1 * 3 * x;
+                Console.WriteLine($"Результат {x1}");
+            }
+            else
+            {
+                int x2 = 2 * x;
+                Console.WriteLine($"Результат {x2}");
+            }*/
+
+            /*Console.WriteLine("Введите число:");
+            int x = Int32.Parse(Console.ReadLine());
+            if (x <= 0)
+            {
+                double x1 = 2 * Math.Sin(x);
+                Console.WriteLine($"Результат {x1}");
+            }
+            else
+            {
+                int x2 = 6 - x;
+                Console.WriteLine($"Результат {x2}");
+            }*/
+
+            Console.WriteLine("Введите число от 1 до 7");
+            int day = 0;
+            string a = Console.ReadLine();
+            switch (a)
+            {
+                case "1":
+                    day += 1;
+
+                    break;
+                case "2":
+                    day += 2;
+
+                    break;
+                case "3":
+                    day += 3;
+
+                    break;
+                case "4":
+                    day += 4;
+
+                    break;
+                case "5":
+                    day += 5;
+
+                    break;
+                case "6":
+                    day += 6;
+
+                    break;
+                case "7":
+                    day += 7;
+
+                    break;
+                default:
+                    Console.WriteLine("Такого дня нету, введите число от 1 до 7");
+                    break;
+            }
+            if (day != 0)
+            {
+                Console.WriteLine($"Результат: {day}");
+            }
+        }
+    }
+}
