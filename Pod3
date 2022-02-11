@@ -1,0 +1,141 @@
+using System;
+using static System.Math;
+
+namespace titipod3
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            /*Console.WriteLine("BBEDUTE 4UCJl0");
+            int n = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Result:");
+            for (int i = 1; i < n+1; i++)
+            {
+                Console.WriteLine($"Count: {i}");
+            }
+            Console.ReadKey();
+
+
+            Console.WriteLine("BBEDUTE 4UCJl0");
+            int n = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Result:");
+            for (int i = -3; i < n + 1; i = i + 3)
+            {
+                Console.WriteLine($"Count: {i}");
+            }
+            Console.ReadKey();
+
+
+            Console.Write("Posledovatel'nost': ");
+            for (int i = 1; i < 101; i ++)
+            {
+                Console.Write($"{i} ");
+            }
+            for (int i = 100; i > 0; i--)
+            {
+                Console.Write($"{i} ");
+            }
+            Console.ReadKey();
+
+
+            Console.WriteLine("BBEDUTE 4UCJl0");
+            int pol = 0;
+            int otr = 0;
+            for (int i = 0; i < 10; i++)
+            {
+                int n = Int32.Parse(Console.ReadLine());
+                if (n >= 0)
+                {
+                    pol++;
+                }
+                if (n <= 0)
+                {
+                    otr++;
+                }
+            }
+            Console.WriteLine($"Polozhit: {pol}; Orticatel'nie: {otr}");
+            Console.ReadKey();
+
+
+            Console.WriteLine("BBEDUTE 4UCJl0");
+            int sum = 0;
+            for (int i = 0; i < 10; i++)
+            {
+                int n = Int32.Parse(Console.ReadLine());
+                sum += n;
+            }
+            Console.WriteLine($"Summa = {sum}");
+
+
+
+            int sum = 0;
+            for (int i = 1; i < 20; i += 2)
+            {
+                Console.Write($"{i} + ");
+                sum += i;
+            }
+            Console.WriteLine($"= Summa: {sum}");
+            Console.ReadKey();
+
+
+
+            double pro = 0;
+            for (int i = 0; i < 10; i++)
+            {
+                double product = Double.Parse(Console.ReadLine());
+                pro *= product;
+            }
+            Console.WriteLine($"Proizvedenie: {pro}");
+            Console.ReadKey();
+
+
+
+            Console.WriteLine("Простые числа: ");
+            int outer;
+            int inner;
+            for (outer = 2; outer < 100; outer++;
+            {
+                for (inner = 2; inner <= (outer / 2); inner++)
+
+                {
+                    if ((outer % inner) == 0) break;
+                }
+
+                if (inner > (outer / inner))
+
+                {
+
+                    Console.WriteLine("{0} is prime", outer);
+                }
+            }*/
+
+
+            int x;
+            int y;
+            for (x = 2; x <= 8; x++)
+            {
+                for (y = 2; y <= 5; y++)
+                {
+                    double a = Math.Pow(x, y);
+                    Console.WriteLine($"z(x,y) = {x}^{y} = {a}");
+                }
+            }
+            Console.ReadKey();
+
+
+
+            /*int x;
+            int y;
+            for (x = 30; x <= 33; x++)
+            {
+                for (y = 1; y <= 5; y++)
+                {
+                    double a = x - y;
+                    Console.WriteLine($"z(x,y) = {x}-{y} = {a}");
+                }
+            }
+            Console.ReadKey();*/
+        }
+    }
+}
