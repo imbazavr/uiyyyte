@@ -1,0 +1,158 @@
+using System;
+using static System.Console;
+using static System.Math;
+
+
+namespace titipod4
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            /*Console.WriteLine("Vvedite chislo");
+            int n = Int32.Parse(Console.ReadLine());
+            int i = 0;
+            Console.WriteLine("Result: ");
+            while (i != n)
+            {
+                i++;
+                Console.WriteLine($"Tekushee znachenie: {i}");
+            }
+
+            
+            int i = 3;
+            while (i != 21)
+            {
+                i += 2;
+                Console.Write($"{i} ");
+            }
+            int p = 3;
+            do
+            {
+                p += 2;
+                Console.Write($"{p} ");
+            } while (p != 21);
+
+
+
+            int i = 18;
+            while (i != 0)
+            {
+                i -= 3;
+                Console.Write($"{i} ");
+            }
+            int p = 18; 
+            do
+            {
+                p -= 3;
+                Console.Write($"{p} ");
+            } while (p != 0);
+
+
+
+            int i = 8;
+            int sum = 1;
+            while (i != 20)
+            {
+                i += 2;
+                Console.Write($"{i} * ");
+                sum *= i;
+                
+            }
+            Console.Write($"= {sum} ");
+
+
+            Console.WriteLine("Vvedite 5 veshestvennih chisel");
+            double sum = 0;
+            int i = 0;
+            while (i != 5)
+            {
+                i++;
+                double n = Double.Parse(Console.ReadLine());
+                sum += n;
+            }
+            Console.WriteLine($"Summa vvedenih chisel = {sum}");
+
+
+
+            int numb;
+            int sch = 0;
+            int max = 0;
+            try
+            {
+
+                do
+                {
+                    numb = Int32.Parse(Console.ReadLine());
+                    if (numb > max && numb != 0)
+                    {
+                        max = numb;
+                        sch += 1;
+                    }
+
+                }
+                while (numb != 0);
+
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine(e.Message + "Povtorite vvod");
+            }
+            Console.WriteLine($"Max {max}, poryadkovi nomer {sch}");
+
+
+
+            Console.WriteLine("Vvedite iks");
+            int x = Int32.Parse(Console.ReadLine());
+            int a = x - 3;
+            int y = (int)(4 * Math.Pow(a, 6) - 7 * Math.Pow(a, 3) + 2);
+            Console.WriteLine($"x = {x};y = {y}");
+
+
+
+            Console.WriteLine("Vedite x (1-8)");
+            int x = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Vedite y (1-8)");
+            int y = Int32.Parse(Console.ReadLine());
+            int z = x + y;
+            if (z % 2 == 0)
+            {
+                Console.WriteLine("kvadrat beliy: false");
+            }
+            else
+            {
+                Console.WriteLine("kvadrat beliy: true");
+            }*/
+
+
+
+            string x = "X";
+            double n = 0;
+            int p = 0;
+            int z = 0;
+            int y = 0;
+            do
+            {
+                Console.WriteLine("\n");
+                p += 1;
+                if (p % 2 != 0)
+                {
+                    while (z != 8)
+                    {
+                        z += 2;
+                        Console.Write($"{x}{n}");
+                    }
+                }
+                else
+                {
+                    while (y != 8)
+                    {
+                        y += 2;
+                        Console.Write($"{n}{x}");
+                    }
+                }
+            } while (p != 8);
+        }
+
+    }
+}
