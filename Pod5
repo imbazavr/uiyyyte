@@ -1,0 +1,136 @@
+using System;
+
+namespace titipod5
+{
+    class MainClass
+    {
+        /*public static void Main(string[] args)
+        {
+
+        }
+        static void Main(string[] args)
+        {
+            int res;
+            Square(5, out res);
+            Console.WriteLine(res);
+        }
+        static void Square(int a, out int res)
+        {
+            res = a * a;
+        }*/
+
+
+        /*static void Main(string[] args)
+        {
+            int a = 1;
+            Plas2(ref a);
+            Console.WriteLine(a); // результат 1
+        }
+        static void Plas2(ref int a)
+        {
+            a += 2;
+        }
+        
+
+
+        static void Main(string[] args)
+        {
+            int a; // здесь не нужно инициализировать будущий параметр значением
+            Plas2(out a);
+            Console.WriteLine(a); // 3
+        }
+        static void Plas2(out int a)
+        {
+            a = 1; // здесь необходимо присвоить какое-то значение
+            a += 2;
+        }
+
+
+
+        ЗАДАНИЯ*/
+
+
+
+
+        /*static void Main(string[] args)
+        {
+            Console.WriteLine("Vvedite 2 chisla");
+            
+            int c = 0;
+            Sum(ref c);
+        }
+        static void Sum(ref int c)
+        {
+            int a = Int32.Parse(Console.ReadLine());
+            int b = Int32.Parse(Console.ReadLine());
+            c = a + b;
+            Console.WriteLine($"Summa {a} + {b} = {c}");
+            }
+
+
+
+        //1.//
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Vvedite znachenie dlya treh storon treugolnika:");
+            int x = 0;
+            Perimeter(ref x);
+        }
+        static void Perimeter(ref int x)
+        { 
+            Console.WriteLine("");
+            int a = Int32.Parse(Console.ReadLine());
+            int b = Int32.Parse(Console.ReadLine());
+            int c = Int32.Parse(Console.ReadLine());
+            x = a + b + c;
+            Console.WriteLine($"perimeter: {x}");
+        }
+        //2//
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Vvedite znachenie dlya treh storon treugolnika:");
+            int x = 0;
+            Perimeter(ref x);
+        }
+        static int Perimeter(ref int x)
+        {
+            Console.WriteLine("");
+            int a = Int32.Parse(Console.ReadLine());
+            int b = Int32.Parse(Console.ReadLine());
+            int c = Int32.Parse(Console.ReadLine());
+            x = a + b + c;
+            Console.WriteLine($"perimeter: {x}");
+        }*/
+
+
+
+        //3//
+        static void Main(string[] args)
+        {
+            int otv = 0;
+            Distance(ref otv);
+        }
+        static void Distance(ref int otv)
+        {
+            Console.WriteLine("Vvedite koordinati dvuh tochek:");
+            int x1 = Int32.Parse(Console.ReadLine());
+            int y1 = Int32.Parse(Console.ReadLine());
+            int x2 = Int32.Parse(Console.ReadLine());
+            int y2 = Int32.Parse(Console.ReadLine());
+            int x = (x2 - x1);
+            double x3 = Math.Pow(x, 2);
+            int y = (y2 - y1);
+            double y3 = Math.Pow(y, 2);
+            NewMethod(x3, y3);
+            
+        }
+
+        private static void NewMethod(double x3, double y3)
+        {
+            double otv = Math.Sqrt(x3 + y3);
+            Console.WriteLine($"{otv}");
+        }
+    }
+}
+  
