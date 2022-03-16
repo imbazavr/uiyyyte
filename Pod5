@@ -89,18 +89,16 @@ namespace titipod5
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Vvedite znachenie dlya treh storon treugolnika:");
-            int x = 0;
-            Perimeter(ref x);
+            Console.WriteLine("Введите значения для трех сторон треугольника: ");
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+            int c = int.Parse(Console.ReadLine());
+            Console.WriteLine("Периметр: " + Perimeter(a, b, c));
         }
-        static int Perimeter(ref int x)
+        static int Perimeter(int a, int b, int c)
         {
-            Console.WriteLine("");
-            int a = Int32.Parse(Console.ReadLine());
-            int b = Int32.Parse(Console.ReadLine());
-            int c = Int32.Parse(Console.ReadLine());
-            x = a + b + c;
-            Console.WriteLine($"perimeter: {x}");
+            int perim = a + b + c;
+            return perim;
         }*/
 
 
@@ -126,10 +124,81 @@ namespace titipod5
             
         }
 
-        private static void NewMethod(double x3, double y3)
+        static void Distance (int x1, int x2, int y1, int y2)
         {
-            double otv = Math.Sqrt(x3 + y3);
-            Console.WriteLine($"{otv}");
+            int X = x2 - x1;
+            int Y = y2 - y1;
+            double res = Math.Sqrt(Math.Pow(X, 2) + Math.Pow(Y,2));
+            Console.WriteLine($"Расстояние: {res}");
+        }
+        
+        //4//
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите координаты двух точек (четыре целых числа: x1, x2, y1, y2): ");
+            int x1 = Int32.Parse(Console.ReadLine());
+            int y1 = Int32.Parse(Console.ReadLine());
+            int x2 = Int32.Parse(Console.ReadLine());
+            int y2 = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Расстояние: " + Distance(x1, x2, y1, y2));
+        }
+        static double Distance(int x1, int x2, int y1, int y2)
+        {
+            int X = x2 - x1;
+            int Y = y2 - y1;
+            double res = Math.Sqrt(Math.Pow(X, 2) + Math.Pow(Y, 2));
+            return res;
+        }
+        
+        //5//
+        
+        int number = Int32.Parse(Console.ReadLine());
+        ChangeDigits(number);
+        static void ChangeDigits(int number)
+        {
+        int a = number/10; //Десятки
+        int b = number%10; //Единицы
+        Console.WriteLine(b * 10 + a);
+        }
+        
+        //6//
+        
+        Console.WriteLine("Введите два двузначных числа: ");
+        int first = int.Parse(Console.ReadLine());
+        int second = int.Parse(Console.ReadLine());
+        Console.WriteLine("Побитовая сумма чисел " + BitwiseSum(first, second));
+        static int BitwiseSum(int first, int second)
+        {
+        int a = first / 10; 
+        int b = first % 10; 
+        int c = second / 10; 
+        int d = second % 10;
+        int result = (a + c) * 10 + (b + d) % 10;
+        return result;
+        }
+        
+        //7//
+        
+        int positive = 0;
+        int negative = 0;
+        PosNegSeq(ref positive, ref negative);
+        static void PosNegSeq(ref int positive, ref int negative)
+        {
+        int number = 0;
+        do
+        {
+            number = int.Parse(Console.ReadLine());
+            if (number>0)
+            {
+                positive++;
+            }
+            else if (number<0)
+            {
+                negative++;
+            }
+        } while (number!=0);
+        Console.WriteLine($"Положительные: {positive}");
+        Console.WriteLine($"Отрицательные: {negative}");
         }
     }
 }
